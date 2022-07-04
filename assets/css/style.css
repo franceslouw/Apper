@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap');
+
+:root {
+    --main-accent-color: #03bad5;
+    --section-title-color-dark: #37474f;
+    --body-color: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.6rem;
+    line-height: 4rem;
+    font-weight: 800;
+}
+
+.btn-white {
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn-white:hover {
+    background-color: #ffffff;
+    color: var(--main-accent-color);
+    border: 2px solid #ffffff;
+}
+
+/* Section title */
+.section-title {
+    position: relative;
+}
+
+h2.section-title-heading {
+    color: var(--section-title-color-dark);
+    padding-top: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid var(--main-accent-color);
+    width: 8%;
+    top: 80px;
+}
+
+.section-title:hover::after {
+    width: 12%;
+    transition: all 0.6s ease-out;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+
+}
+
+
+
+/* ============ NAVIGATION =============== */
+
+.navbar {
+    padding-top: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .85rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #27778b;
+}
