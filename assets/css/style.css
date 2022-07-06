@@ -87,3 +87,53 @@ h2.section-title-heading {
 .navbar-light .navbar-nav .nav-link:hover {
     color: #27778b;
 }
+
+
+/* ============ HERO =============== */
+
+#hero {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62),rgba(105,240,174,0.52)), url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 15%;
+    transform: skewY(-2deg);
+    transform-origin: bottom right;
+    bottom: 0%;
+    right: 0;
+    left: 0;
+}
+
+.main-hero-content h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .11rem;
+}
+
+.main-hero-content p {
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.image-box img {
+    position: absolute;
+    top: 2rem;
+}
+
+/* ============ ABOUT =============== */
+
+#about i {
+    color: ;
+}
